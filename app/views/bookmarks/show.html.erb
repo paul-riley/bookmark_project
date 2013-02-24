@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bookmark.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @bookmark.url %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @bookmark.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_bookmark_path(@bookmark) %> <br />
+<%= link_to 'New Bookmark', new_bookmark_path %><br />
+<%= link_to 'Bookmarks', bookmarks_path %>
+
